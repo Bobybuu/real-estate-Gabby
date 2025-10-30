@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PristinePrimier Real Estate - Find Your Dream Home</title>
+    <meta name="description" content="Discover premium properties with PristinePrimier Real Estate. Expert agents, comprehensive listings, and professional property management services." />
+    <meta name="author" content="PristinePrimier Real Estate" />
+    <link rel="canonical" href="https://pristineprimier.com" />
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#1f1e1d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="PristinePrimier" />
+
+    <!-- Favicon and Manifest Integration -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="PristinePrimier Real Estate - Find Your Dream Home" />
+    <meta property="og:description" content="Your trusted partner in real estate. Buy, sell, rent, or manage properties with confidence." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/web-app-manifest-512x512.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PristinePrimier Real Estate" />
+    <meta name="twitter:description" content="Find your perfect home with PristinePrimier - Your trusted real estate partner" />
+    <meta name="twitter:image" content="/web-app-manifest-512x512.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    
+    <!-- Service Worker Registration - Only in Production -->
+    <script>
+      // Only register service worker in production
+      if ('serviceWorker' in navigator && !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1')) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('ServiceWorker registration failed: ', error);
+            });
+        });
+      }
+    </script>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
