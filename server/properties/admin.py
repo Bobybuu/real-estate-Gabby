@@ -375,6 +375,6 @@ class InquiryAdmin(admin.ModelAdmin):
 
 # ===== ADMIN SITE CONFIGURATION =====
 
-admin.site.site_header = "PristinePrimer Real Estate Admin"
-admin.site.site_title = "PristinePrimer Admin"
+admin.site.site_header = "gabbyrealestate Real Estate Admin"
+admin.site.site_title = "gabbyrealestate Admin"
 admin.site.index_title = "Real Estate Management"

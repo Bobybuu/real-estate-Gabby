@@ -83,13 +83,13 @@ const SearchBar = ({ onSearch, variant = 'hero' }: SearchBarProps) => {
         </div>
 
         {/* Search Button - Fixed width on desktop */}
-        <Button
-          type="submit"
-          className="h-11 text-sm font-medium bg-[#f77f77] hover:bg-[#f77f77]/90 text-white border border-[#f77f77] w-full md:w-32"
-        >
-          <Search className="h-4 w-4 mr-2" />
-          Search
-        </Button>
+       <Button
+        type="submit"
+        className="h-11 text-sm font-medium bg-[#f2bb22] hover:bg-[#e0a91e] text-white border border-[#f2bb22] w-full md:w-32 transition-colors duration-200"
+      >
+        <Search className="h-4 w-4 mr-2" />
+        Search
+      </Button>
       </div>
     </form>
   );

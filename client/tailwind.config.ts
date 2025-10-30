@@ -22,7 +22,6 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-          light: "hsl(var(--primary-light))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -39,7 +38,6 @@ export default {
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-          light: "hsl(var(--accent-light))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -49,14 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        teal: {
-          DEFAULT: "hsl(var(--teal))",
-          foreground: "hsl(var(--teal-foreground))",
-        },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          foreground: "hsl(var(--gold-foreground))",
-        },
+        // Golden Years Realty Custom Colors
+        golden: {
+          cream: '#FFFBF0',
+          accent: '#F9E4B7',
+          deep: '#E6C37A',
+          brown: '#8B6F3C',
+        }
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,6 +82,10 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        'golden-gradient': 'linear-gradient(135deg, #FFFBF0 0%, #F9E4B7 50%, #FFFBF0 100%)',
+        'golden-gradient-hover': 'linear-gradient(135deg, #FFFBF0 0%, #E6C37A 50%, #FFFBF0 100%)',
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

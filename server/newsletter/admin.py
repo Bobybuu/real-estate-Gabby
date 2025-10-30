@@ -187,6 +187,6 @@ class PopupDismissalAdmin(admin.ModelAdmin):
 
 
 # Optional: Admin site customization (you can remove this if already in main admin.py)
-admin.site.site_header = "PristinePrimier Real Estate Administration"
-admin.site.site_title = "PristinePrimier Admin Portal"
-admin.site.index_title = "Welcome to PristinePrimier Newsletter Management"
+admin.site.site_header = "gabbyrealestate Real Estate Administration"
+admin.site.site_title = "gabbyrealestate Admin Portal"
+admin.site.index_title = "Welcome to gabbyrealestate Newsletter Management"

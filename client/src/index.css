@@ -9,60 +9,59 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* PristinePrimier Brand Colors */
-    --background: 0 0% 100%;
-    --foreground: 210 100% 7%;
+    /* Golden Years Realty Brand Colors - Updated with new golden palette */
+    --background: 48 100% 97%; /* #FFFBF0 in HSL - primary cream */
+    --foreground: 34 33% 35%;  /* #8B6F3C in HSL - deep brown-gold */
     
-    /* Navy Blue Primary */
-    --primary: 210 100% 7%;
+    /* Primary Golden Colors */
+    --primary: 43 74% 49%;     /* Original golden for compatibility */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 210 70% 20%;
     
-    /* Navy Green Accent */
-    --accent: 73 75% 12%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 73 65% 25%;
+    /* Accent Colors - Updated to match new palette */
+    --accent: 40 69% 76%;      /* #F9E4B7 in HSL - accent gold */
+    --accent-foreground: 34 33% 35%; /* #8B6F3C in HSL */
     
-    /* Teal for CTAs */
-    --teal: 174 72% 40%;
-    --teal-foreground: 0 0% 100%;
+    /* Secondary Colors */
+    --secondary: 48 100% 99%;  /* Lighter cream */
+    --secondary-foreground: 34 33% 35%;
     
-    /* Gold for Premium CTAs */
-    --gold: 45 100% 50%;
-    --gold-foreground: 210 100% 7%;
+    /* Muted Colors */
+    --muted: 40 69% 90%;       /* Light gold */
+    --muted-foreground: 34 33% 45%; /* Slightly lighter brown */
+    
+    /* Card Colors */
+    --card: 0 0% 100%;         /* White cards */
+    --card-foreground: 34 33% 35%;
+    
+    /* Popover Colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 34 33% 35%;
     
     /* UI Colors */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 210 100% 7%;
+    --border: 40 69% 85%;      /* Light gold borders */
+    --input: 40 69% 90%;       /* Light gold inputs */
+    --ring: 34 33% 35%;        /* Brown-gold ring */
     
-    --muted: 210 15% 95%;
-    --muted-foreground: 210 15% 45%;
-    
-    --card: 0 0% 100%;
-    --card-foreground: 210 100% 7%;
-    
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 100% 7%;
-    
-    --border: 210 20% 90%;
-    --input: 210 20% 90%;
-    --ring: 174 72% 40%;
-    
+    /* Destructive Colors */
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
     
     --radius: 0.5rem;
     
-    /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(210 100% 7%) 0%, hsl(210 70% 20%) 50%, hsl(73 75% 12%) 100%);
-    --gradient-overlay: linear-gradient(180deg, hsla(210 100% 7% / 0.7) 0%, hsla(210 100% 7% / 0.3) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(210 20% 98%) 100%);
+    /* Gradients - Updated for new golden theme */
+    --gradient-hero: linear-gradient(135deg, #FFFBF0 0%, #F9E4B7 50%, #FFFBF0 100%);
+    --gradient-overlay: linear-gradient(180deg, rgba(249, 228, 183, 0.8) 0%, rgba(249, 228, 183, 0.4) 100%);
+    --gradient-card: linear-gradient(135deg, #FFFFFF 0%, #FFFBF0 100%);
+    --gradient-button: linear-gradient(135deg, #FFFBF0 0%, #F9E4B7 50%, #FFFBF0 100%);
+    --gradient-button-hover: linear-gradient(135deg, #FFFBF0 0%, #E6C37A 50%, #FFFBF0 100%);
     
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(210 100% 7% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(210 100% 7% / 0.1), 0 2px 4px -1px hsl(210 100% 7% / 0.06);
-    --shadow-lg: 0 10px 15px -3px hsl(210 100% 7% / 0.1), 0 4px 6px -2px hsl(210 100% 7% / 0.05);
-    --shadow-xl: 0 20px 25px -5px hsl(210 100% 7% / 0.1), 0 10px 10px -5px hsl(210 100% 7% / 0.04);
+    /* Shadows - Updated for golden theme */
+    --shadow-sm: 0 1px 2px 0 rgba(139, 111, 60, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(139, 111, 60, 0.1), 0 2px 4px -1px rgba(139, 111, 60, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(139, 111, 60, 0.1), 0 4px 6px -2px rgba(139, 111, 60, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(139, 111, 60, 0.1), 0 10px 10px -5px rgba(139, 111, 60, 0.04);
+    --shadow-golden: 0 4px 8px rgba(249, 228, 183, 0.4);
+    --shadow-golden-hover: 0 6px 12px rgba(249, 228, 183, 0.6);
     
     /* Transitions */
     --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -70,41 +69,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 210 100% 7%;
-    --foreground: 0 0% 98%;
+    --background: 34 33% 15%;  /* Dark brown background */
+    --foreground: 48 100% 97%; /* Cream text */
     
-    --primary: 0 0% 98%;
-    --primary-foreground: 210 100% 7%;
-    --primary-light: 210 70% 85%;
+    --primary: 40 69% 76%;     /* Accent gold */
+    --primary-foreground: 34 33% 15%;
     
-    --accent: 73 65% 25%;
-    --accent-foreground: 0 0% 100%;
-    --accent-light: 73 55% 40%;
+    --accent: 43 74% 49%;      /* Original golden */
+    --accent-foreground: 48 100% 97%;
     
-    --teal: 174 72% 50%;
-    --teal-foreground: 210 100% 7%;
+    --secondary: 34 33% 20%;   /* Dark brown secondary */
+    --secondary-foreground: 48 100% 97%;
     
-    --gold: 45 100% 60%;
-    --gold-foreground: 210 100% 7%;
+    --muted: 34 33% 25%;       /* Dark brown muted */
+    --muted-foreground: 48 100% 80%; /* Light cream */
     
-    --secondary: 210 50% 15%;
-    --secondary-foreground: 0 0% 98%;
+    --card: 34 33% 18%;        /* Dark brown card */
+    --card-foreground: 48 100% 97%;
     
-    --muted: 210 50% 20%;
-    --muted-foreground: 210 15% 65%;
+    --popover: 34 33% 18%;
+    --popover-foreground: 48 100% 97%;
     
-    --card: 210 70% 12%;
-    --card-foreground: 0 0% 98%;
-    
-    --popover: 210 70% 12%;
-    --popover-foreground: 0 0% 98%;
-    
-    --border: 210 50% 20%;
-    --input: 210 50% 20%;
-    --ring: 174 72% 50%;
+    --border: 34 33% 30%;
+    --input: 34 33% 25%;
+    --ring: 40 69% 76%;
     
     --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
   }
 }
 
@@ -115,10 +106,13 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    background-color: #FFFBF0; /* Primary cream fallback */
+    color: #8B6F3C; /* Deep brown-gold fallback */
   }
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold tracking-tight;
+    color: #8B6F3C;
   }
   
   h1 {
@@ -134,7 +128,43 @@ All colors MUST be HSL.
   }
 }
 
+@layer components {
+  /* Golden Button Component */
+  .golden-button {
+    background: linear-gradient(135deg, #FFFBF0 0%, #F9E4B7 50%, #FFFBF0 100%);
+    color: #8B6F3C;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(249, 228, 183, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .golden-button:hover {
+    box-shadow: 0 6px 12px rgba(249, 228, 183, 0.6);
+    background: linear-gradient(135deg, #FFFBF0 0%, #E6C37A 50%, #FFFBF0 100%);
+  }
+  
+  /* Primary Background */
+  .primary-bg {
+    background-color: #FFFBF0;
+  }
+  
+  /* Golden Card Component */
+  .golden-card {
+    @apply bg-white rounded-lg shadow-md border border-golden-accent/30 hover:shadow-lg transition-all duration-300;
+  }
+  
+  /* Golden Input Component */
+  .golden-input {
+    @apply bg-white border border-golden-accent/50 rounded-lg px-4 py-2 text-golden-brown placeholder-golden-brown/60 focus:outline-none focus:ring-2 focus:ring-golden-accent focus:border-transparent transition-all duration-200;
+  }
+}
+
 @layer utilities {
+  /* Gradient Utilities */
   .gradient-hero {
     background: var(--gradient-hero);
   }
@@ -147,10 +177,28 @@ All colors MUST be HSL.
     background: var(--gradient-card);
   }
   
+  .gradient-button {
+    background: var(--gradient-button);
+  }
+  
+  .gradient-button-hover {
+    background: var(--gradient-button-hover);
+  }
+  
+  /* Shadow Utilities */
   .shadow-elegant {
     box-shadow: var(--shadow-lg);
   }
   
+  .shadow-golden {
+    box-shadow: var(--shadow-golden);
+  }
+  
+  .shadow-golden-hover {
+    box-shadow: var(--shadow-golden-hover);
+  }
+  
+  /* Transition Utilities */
   .transition-base {
     transition: var(--transition-base);
   }
@@ -158,9 +206,56 @@ All colors MUST be HSL.
   .transition-smooth {
     transition: var(--transition-smooth);
   }
+  
+  /* Golden Years specific utilities */
+  .bg-golden-primary {
+    background-color: #FFFBF0;
+  }
+  
+  .text-golden-primary {
+    color: #8B6F3C;
+  }
+  
+  .border-golden-primary {
+    border-color: #F9E4B7;
+  }
+  
+  .bg-golden-cream {
+    background-color: #FFFBF0;
+  }
+  
+  .text-golden-brown {
+    color: #8B6F3C;
+  }
+  
+  .bg-golden-accent {
+    background-color: #F9E4B7;
+  }
+  
+  .border-golden-accent {
+    border-color: #F9E4B7;
+  }
+  
+  .bg-golden-deep {
+    background-color: #E6C37A;
+  }
 }
 
+/* Custom scrollbar for golden theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #FFFBF0;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #F9E4B7;
+  border-radius: 4px;
+}
 
+::-webkit-scrollbar-thumb:hover {
+  background: #E6C37A;
+}
 
